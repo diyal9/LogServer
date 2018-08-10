@@ -1,0 +1,72 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<include file="struts-default.xml" />
+	<package name="protocol" extends="json-default">
+		<action name="LogUpload" class="com.diyal.action.ProtocolAction"
+			method="LogUpload" />
+	</package>
+	
+	<package name="all" extends="struts-default">
+		<interceptors>
+			<!-- 登录拦截 -->
+			<interceptor name="loginInterceptor"
+				class="com.diyal.interceptors.NoLoginInterceptor">
+				
+			</interceptor>
+
+			<!-- 拦截器栈 -->
+			<interceptor-stack name="mydefault">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="loginInterceptor" />
+			</interceptor-stack>
+		</interceptors>
+		
+		<default-interceptor-ref name="mydefault" />
+		 <!-- 定义全局处理结果 -->
+         <global-results>
+             <!-- 逻辑名为login的结果，映射到/login.jsp页面 -->
+             <result name="noLogin">/login.jsp</result>
+         </global-results>
+	</package>
+
+	<package name="com" extends="all" namespace="/" >
+
+		<!-- 配置登录的Action -->
+		<action name="Login" class="com.diyal.action.LoginAction">
+			<result>/index.jsp</result>
+			<result name="input">/login.jsp</result>
+			<!-- 登录拦截器 -->
+			<interceptor-ref name="mydefault" />
+		</action>
+		
+		<action name="goHome" class="com.diyal.action.LoginAction" method="gohome">
+			<result>/index.jsp</result>
+		</action>
+
+		<action name="ViewLog" class="com.diyal.action.ViewLogAction">
+			<result>/ViewLog.jsp</result>
+		</action>
+		
+		<action name="ViewLogAuto" class="com.diyal.action.ViewLogAction" method="executeAuto">
+			<result>/ViewLogAuto.jsp</result>
+		</action>
+		
+		<action name="deleteLookUp" class="com.diyal.action.ViewLogAction" method="deleteLookUp">
+			<result type="redirectAction">ViewLog</result>
+		</action>
+
+		<action name="ClearMyLog" class="com.diyal.action.ViewLogAction" method="clearMyLog">
+			<result type="redirectAction">ViewLogAuto</result>
+		</action>
+		
+		<!-- Log协同-->
+		<action name="LogTeamHanderMain" class="com.diyal.action.LogHandleTeamAction">
+			<result>/LogTeamManager.jsp</result>
+		</action>
+
+	</package>
+
+</struts>

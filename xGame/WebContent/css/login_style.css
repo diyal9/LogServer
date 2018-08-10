@@ -1,0 +1,57 @@
+* {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.loginPage {
+	BACKGROUND: url(../images/loginBg.gif) #c7e2f3 repeat-x; OVERFLOW: auto
+}
+.loginBox {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 218px; BACKGROUND: url(../images/login.jpg) no-repeat; PADDING-BOTTOM: 0px; MARGIN: 111px auto 0px; WIDTH: 337px; PADDING-TOP: 150px; HEIGHT: 236px
+}
+.loginBox UL LI {
+	CLEAR: both
+}
+.loginBox .userinput {
+	BORDER-RIGHT: #89aec8 1px solid; BORDER-TOP: #89aec8 1px solid; PADDING-LEFT: 3px; FLOAT: left; MARGIN-BOTTOM: 13px; BORDER-LEFT: #89aec8 1px solid; LINE-HEIGHT: 20px; BORDER-BOTTOM: #89aec8 1px solid; HEIGHT: 20px;WIDTH: 175px
+}
+.loginBox .imgNumber {
+	BORDER-RIGHT: #89aec8 1px solid; BORDER-TOP: #89aec8 1px solid; PADDING-LEFT: 3px; FLOAT: left; MARGIN-BOTTOM: 13px; BORDER-LEFT: #89aec8 1px solid; LINE-HEIGHT: 20px; BORDER-BOTTOM: #89aec8 1px solid; HEIGHT: 20px;WIDTH: 75px
+}
+.loginBox .userTypeMain {
+	MARGIN-BOTTOM: 17px;float:left;
+}
+.loginBox .userTypeMain .userType {
+	PADDING-LEFT: 3px; FLOAT: left; LINE-HEIGHT: 20px;  HEIGHT: 20px;width:30px;
+}
+.loginBox .textdesc {
+	FLOAT: left; LINE-HEIGHT: 20px;
+}
+.loginBox IMG {
+	FLOAT: left; MARGIN-LEFT: 20px
+}
+.loginBox .copyright {
+	LINE-HEIGHT: 20px;color:#666666;font-size:12px;padding-top:50px;
+}
+.loginBox .copyright A{
+	color:#666666;font-size:12px;
+}
+.loginBox .copyright A:hover{
+	color:#359DCA;font-size:12px;
+}
+.loginBox .copyright A:link{
+	color:#359DCA;font-size:12px;
+}
+.loginBtn {
+	BACKGROUND: url(../images/loginbtn.png) no-repeat; WIDTH: 70px; COLOR: #fff; MARGIN-RIGHT: 40px; HEIGHT: 27px
+}
+.loginBtn:hover {
+	BACKGROUND: url(../images/loginbtn.png) no-repeat 0px -27px
+}
+UL {
+	LIST-STYLE-TYPE: none
+}
+A {
+	TEXT-DECORATION: none
+}
+.botten {
+	OVERFLOW-X: hidden; OVERFLOW: hidden
+}

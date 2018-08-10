@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<appconfig>
+	<!--数据库配置 服务器（真实环境） -->
+
+	<!-- <driverName>org.postgresql.Driver</driverName> <connString>jdbc:postgresql://10.99.28.251:5432/smwinner</connString> 
+		<userName>smwinner</userName> <passWord>smwinner</passWord> -->
+
+	<!--数据库配置 开发用 -->
+	<!-- -->
+	<driverName>org.postgresql.Driver</driverName>
+	<connString>jdbc:postgresql://localhost:5432/postgres</connString>
+	<userName>postgres</userName>
+	<passWord>diyal</passWord>
+
+
+	<!-- 数据库配置 本地 -->
+	<!-- <driverName>org.postgresql.Driver</driverName> <connString>jdbc:postgresql://127.0.0.1:5432/smwinner</connString> 
+		<userName>smwinner</userName> <passWord>smwinner</passWord> -->
+
+</appconfig>
